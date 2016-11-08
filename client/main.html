@@ -1,0 +1,26 @@
+<head>
+    <title>date-range</title>
+</head>
+
+<body>
+<h1>Bootstrap data range picker DEMO</h1>
+
+{{>demo}}
+</body>
+<template name="list">
+    {{#each list}}
+        {{dates}}
+    {{/each}}
+</template>
+<template name="demo">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                {{> quickForm id='demo1' collection=collection  doc=doc type="update"}}
+            </div>
+        </div>
+    </div>
+</template>
+
+
+
